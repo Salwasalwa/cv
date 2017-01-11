@@ -14,10 +14,10 @@
         <nav>
             <ul>
                 <li class="linav"><a href="#presentation">Présentation</a></li>
-                <li class="linav"><a href="#expprof">PROFESSIONNELLES</a></li>
                 <li class="linav"><a href="#compinf">INFORMATIQUES</a></li>
                 <li class="linav"><a href="#foracad">ACADÉMIQUE</a></li>
-                <li class="linav"><a href="">Contact</a></li>
+                <li class="linav"><a href="#contact">Contact</a></li>
+
             </ul>
         </nav>
     </header>
@@ -25,9 +25,9 @@
         <nav>
             <h2>Projets</h2>
             <ul>
-                <li class="liasid"><a href="../exhtml/index.html">Index</a></li>
-                <li class="liasid"><a href="../fiche.html">Fiche</a></li>
-                <li class="liasid"><a href="../fiche2.html">Fiche2</a></li>
+                <li class="liasid"><a href="../barremenu/index.html">Index</a></li>
+                <li class="liasid"><a href="../fiche/fiche.html">Fiche</a></li>
+                <li class="liasid"><a href="../fiche/fiche2.html">Fiche2</a></li>
             </ul>
         </nav>
     </aside>
@@ -42,21 +42,11 @@
                 <li class="address"><label>Coordonnées GPS: </label> 48000 Mende, France Latitude : 44.517611 | Longitude : 3.501873</li>
             </ul>
         </section>
-        <section>
-            <h3 id="expprof">EXPERIENCES PROFESSIONNELLES</h3>
-            <p>
-                2010-2011 Assitante informatique, Cyber café Ihssan, Almeria, Espagne<br /> Assitance des clients sur l’utilisation information<br /> Réparation des équipements
-            </p>
-            <p>
-                2008-2009. Stagiaire en technique informatique dans la cadre du cursus académique, entreprise UPI, Almería, Espagne <br /> Montage, installation et configuration des équipements.<br /> Réparation et maintenance des équipements.<br /> Installation
-                et configuration des composants et périphériques.<br /> Copies de sécurité et recupération de données.<br />
-            </p>
-        </section>
+
         <section>
             <h3 id="compinf">COMPETENCES INFORMATIQUES</h3>
             <h4>RESEAUX (LAN /WAN /WIFI /ADSL /CISCO)</h4>
             <ul>
-
                 <li> Planification, installation/configuration et administration de réseaux locaux.</li>
                 <li>Installation de mécanismes de sécurité: antivirus, pare-feu, proxy, et autres.</li>
                 <li>Installation et configuration de dispositifs: routers, switchs,et autres.</li>
@@ -72,11 +62,48 @@
             </ul>
 
         </section>
+        <section id="contact">
+            <form action="http://live.codincamp.fr/mail.php" method="post">
+                <!--method="get"-->
+                <fieldset>
+                    <legend>Informations Personnelles</legend>
+                    <label for="nom">Nom  </label>
+                    <input type="text" name="nom" id="nom" />
+
+                    <label class="cont" for="prenom">Prenom</label>
+                    <input class="cont" type="text" name="prenom" id="prenom" />
+
+                    <label class="cont" for="datedenaissance">Date de naissance</label>
+                    <input type="date" name="age" id="datedenaissance" />
+
+                    <label class="cont" for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+
+                    <label class="cont" for="ville">Ville</label>
+                    <input class="cont" type="text" name="ville" id="ville" />
+
+                    <label class="cont" for="telefon">Numéro de téléphone</label>
+                    <input class="cont" type="tel" name="telefon" id="telefon" />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Commentaire</legend>
+                    <label for="subject">Subject</label>
+                    <input type="text" name="nom" id="subject" />
+                    <textarea name="commentaires"></textarea>
+                </fieldset>
+                <fieldset>
+                    <input class="reset" type="reset" name="envoyer" value="Réinitialise" />
+                    <input class="submit" type="submit" name="envoyer" value="Envoyer" />
+                </fieldset>
+
+            </form>
+        </section>
 
     </main>
     <footer>
-        <a href="http://www.yahoo.fr"><img class="imglogo" src="../image/logo-yahoo.png" alt="logya" /></a>
-        <a href="http://www.google.fr"><img class="imglogo" src="../image/google.svg" alt="loggog" /></a>
+        <a href="http://www.yahoo.fr" target="_blank"><img class="imglogo" src="../image/logo-yahoo.png" alt="logya" /></a>
+        <a href="http://www.google.fr" target="_blank"><img class="imglogo" src="../image/google.svg" alt="loggog" /></a>
     </footer>
 </body>
 

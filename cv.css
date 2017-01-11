@@ -15,10 +15,10 @@ img {
 }
 
 img:hover {
-    width: 300px;
+    /*width: 300px;
     height: 300px;
-    transition-property: width height;
-    transition-duration: 0.5s 0.5s;
+     transition-property: width height;*/
+     transform: rotate(360deg);
 }
 
 nav {
@@ -26,7 +26,6 @@ nav {
     width: 80%;
     height: 4em;
     margin-top: 2em;
-
 }
 
 .linav {
@@ -39,7 +38,6 @@ aside {
     width: 15%;
     margin: 1em;
     padding: 1em;
-
 }
 
 main {
@@ -52,12 +50,12 @@ main {
 .liasid {
     padding-top: 4em;
     list-style-type: none;
-
 }
 
 a {
     color: rgb(31, 218, 173);
 }
+
 a:hover {
     color: rgb(96, 102, 242);
     font-size: 1.5em;
@@ -65,23 +63,59 @@ a:hover {
     transition-property: font-size font-family;
     transition-duration: 0.5s, 0.5s;
 }
+
+
 /*a:visited {
     color: rgb(230, 10, 43);
 }*/
+
 h3 {
     font-size: 1em;
     color: rgb(188, 199, 186);
 }
+
 .imglogo {
     width: 100px;
     height: 100px;
 }
+
 footer {
     float: left;
     width: 90%;
 }
+
 h2:hover {
     font-size: 2em;
     color: rgb(15, 232, 173);
     transition-duration: 0.5s, 0.5s;
+}
+
+label.cont {
+    display: block;
+    width: 20em;
+}
+
+input {
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+
+fieldset {
+    width: 35em;
+}
+
+textarea {
+    width: 535px;
+    height: 148px;
+}
+
+.reset {
+    color: rgb(230, 223, 238);
+    background-color: rgb(17, 16, 16);
+    margin-top: 1em;
+}
+
+.submit {
+    color: rgb(9, 99, 51);
+    float: right;
 }
